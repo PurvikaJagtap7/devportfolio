@@ -77,7 +77,7 @@ const Hero = () => {
           </motion.p>
 
           <motion.h1
-            className="text-center text-[40px] md:text-5xl lg:text-6xl font-bold my-6"
+            className="text-center text-[40px] md:text-2xl lg:text-6xl font-bold my-6"
             style={{
               textShadow: "2px 2px 4px rgba(0,0,0,0.3)",
               color: "#00d4ff",
@@ -97,7 +97,7 @@ const Hero = () => {
 
           {/* Rest of the content remains unchanged */}
           <motion.p
-            className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl"
+            className="text-center md:tracking-wider mb-0 text-sm md:text-lg lg:text-2xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
@@ -121,7 +121,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8 }}
           >
-            Let's build something amazing together!🎯🚀
+            Let&apos;s build something amazing together!🎯🚀
           </motion.p>
 
           <motion.div

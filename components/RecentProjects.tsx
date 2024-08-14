@@ -5,6 +5,7 @@ import { FaLocationArrow } from "react-icons/fa6";
 import { motion } from "framer-motion";
 import { projects } from "@/data";
 import { PinContainer } from "./ui/Pin";
+import Image from "next/image";
 
 const RecentProjects = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -61,20 +62,26 @@ const RecentProjects = () => {
                   whileHover={{ scale: 1.05 }}
                   transition={{ type: "spring", stiffness: 300 }}
                 >
-                  <img
+                  <Image
                     src="/bg.png"
                     alt="bgimg"
-                    className="w-full h-full object-cover"
+                    fill
+                    style={{ objectFit: "cover" }}
                   />
                 </motion.div>
-                <motion.img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
+                <motion.div
+                  className="z-10 absolute inset-0 flex items-center justify-center"
                   initial={{ y: 20, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.2 }}
-                />
+                >
+                  <Image
+                    src={item.img}
+                    alt="cover"
+                    fill
+                    style={{ objectFit: "contain" }}
+                  />
+                </motion.div>
               </div>
               <motion.h1
                 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1"
@@ -104,9 +111,11 @@ const RecentProjects = () => {
                       }}
                       whileHover={{ scale: 1.2, zIndex: 1 }}
                     >
-                      <img
+                      <Image
                         src={icon}
                         alt={`icon${iconIndex}`}
+                        width={32}
+                        height={32}
                         className="p-2"
                       />
                     </motion.div>
