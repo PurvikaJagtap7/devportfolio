@@ -6,23 +6,25 @@ import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-20 pb-10 relative" id="contact">
       {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-70">
+      <div className="w-full absolute left-0 bottom-0 h-[calc(100%+288px)]">
         <Image
           src="/footer-grid.svg"
           alt="Footer grid background"
           fill
+          sizes="100vw"
+          priority
           style={{ objectFit: "contain" }}
           className="opacity-50"
         />
       </div>
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center relative z-10">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to take <span className="text-purple">your</span> digital
           presence to the next level?
-        </h1> 
+        </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Reach out to me today and let&apos;s discuss how I can help you
           achieve your goals.
@@ -35,33 +37,29 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center relative z-10">
         <p className="md:text-base text-sm md:font-normal font-light">
           Copyright © 2024 Purvika Jagtap
         </p>
 
         <div className="flex items-center md:gap-3 gap-6">
           {socialMedia.map((info) => (
-            <div
+            <a
               key={info.id}
+              href={info.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
             >
-              <a
-                key={info.id}
-                href={info.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-              >
-                <Image
-                  src={info.img}
-                  alt={`${info.id} icon`}
-                  width={20}
-                  height={20}
-                  style={{ width: "auto", height: "auto" }}
-                />
-              </a>
-            </div>
+              <Image
+                src={info.img}
+                alt={`${info.id} icon`}
+                width={20}
+                height={20}
+                sizes="20px"
+                style={{ width: "auto", height: "auto" }}
+              />
+            </a>
           ))}
         </div>
       </div>

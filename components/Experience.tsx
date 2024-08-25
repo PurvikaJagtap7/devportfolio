@@ -6,24 +6,22 @@ import Image from "next/image";
 const Experience = () => {
   return (
     <div className="py-20 w-full bg-navy-dark">
-      <h1 className="heading text-white text-center">
+      <h1 className="heading text-white text-center px-4">
         My <span className="text-fuchsia-500">professional journey</span>
       </h1>
 
       <div className="w-full mt-12 relative container mx-auto px-4">
         {/* Vertical line */}
-        <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-white"></div>
+        <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-white md:transform md:-translate-x-1/2"></div>
 
         {workExperience.map((card, index) => (
           <div
             key={card.id}
-            className="mb-16 flex justify-between items-center w-full"
+            className={`mb-16 flex flex-col items-center w-full ${
+              index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+            }`}
           >
-            <div
-              className={`w-5/12 ${
-                index % 2 === 0 ? "order-1" : "order-1 md:order-2"
-              }`}
-            >
+            <div className="w-full md:w-5/12 mb-4 md:mb-0">
               <Button
                 duration={Math.floor(Math.random() * 10000) + 10000}
                 borderRadius="1.75rem"
@@ -38,9 +36,10 @@ const Experience = () => {
                 <div className="flex flex-col p-4 md:p-6 gap-4">
                   <Image
                     src={card.thumbnail}
-                    alt={card.thumbnail}
+                    alt={card.title}
                     width={96}
                     height={96}
+                    sizes="(max-width: 768px) 64px, 96px"
                     className="w-16 md:w-24 mx-auto"
                   />
                   <div>
@@ -55,18 +54,18 @@ const Experience = () => {
               </Button>
             </div>
 
-            {/* Timeline dot and connecting line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col items-center">
+            {/* Timeline dot and arrow */}
+            <div className="absolute left-0 md:left-1/2 transform translate-x-4 md:-translate-x-1/2 flex items-center">
               <div className="w-4 h-4 bg-purple-500 rounded-full z-10"></div>
-              <div className="w-0.5 h-full bg-white"></div>
+              <div
+                className={`h-0.5 bg-white w-8 md:w-16 ${
+                  index % 2 === 0 ? "md:order-last" : "md:order-first"
+                }`}
+              ></div>
             </div>
 
-            {/* Empty div for spacing on mobile */}
-            <div
-              className={`w-5/12 ${
-                index % 2 === 0 ? "order-2" : "order-2 md:order-1"
-              }`}
-            ></div>
+            {/* Empty div for spacing on desktop */}
+            <div className="hidden md:block md:w-5/12"></div>
           </div>
         ))}
       </div>

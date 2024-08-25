@@ -75,6 +75,7 @@ export const projects = [
     title: "Space themed portfolio website",
     des: "Animated Portfolio Website with Next.js and Framer Motion",
     img: "/spaceportfolio.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://space-portfolio-835x.vercel.app/",
   },
@@ -83,38 +84,43 @@ export const projects = [
     title: "sanskritiSpaces - Real Estate App",
     des: "sanskritiSpaces, a Real Esatate NextJS Web application made using Rapid API.",
     img: "/sanskriti.JPG",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "https://sanskriti-spaces.vercel.app/", // Updated to a complete URL
+    link: "https://sanskriti-spaces.vercel.app/",
   },
   {
     id: 3,
     title: "Sushi Bites",
     des: "Sushi Bites website, your go-to destination for fresh, delicious, and authentic sushi! ",
     img: "/sushi.JPG",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "https://sushi-bites.vercel.app/", // Updated to a complete URL
+    link: "https://sushi-bites.vercel.app/",
   },
   {
     id: 4,
     title: "Book Town",
     des: "BookTown is a fully functional website for purchasing books",
     img: "/booktown.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://booktown-flax.vercel.app/Home-Page/index.html", // Updated to a complete URL
+    link: "https://booktown-flax.vercel.app/Home-Page/index.html",
   },
   {
     id: 5,
     title: "Apple-Iphone Website Clone",
     des: "Clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP and Three.js for displaying iPhone 15 Pro models in various colors and shapes.",
     img: "/apple-iphone.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://apple-iphone-tan.vercel.app/", // Updated to a complete URL
+    link: "https://apple-iphone-tan.vercel.app/",
   },
   {
     id: 6,
     title: "Restaurant website",
     des: "Explore Grilli - Restaurant Website",
     img: "/project-grilli-1.JPG",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://grillirestau-purvika-jagtap-s-projects.vercel.app/",
   },
@@ -123,6 +129,7 @@ export const projects = [
     title: "Indian Tourism",
     des: "Explore the epic wonders of India and its unique places.",
     img: "/shubhyatri.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/html.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://www.shubhyatri.com/",
   },
@@ -131,6 +138,7 @@ export const projects = [
     title: "Shagun Public Charitable Trust",
     des: "Developed a website for NGO to help them fulfill necessary actions efficiently.",
     img: "/ngo.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/html.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "https://ngoshagun.com/",
   },
@@ -139,60 +147,9 @@ export const projects = [
     title: "Weather Prediction App",
     des: "Developed a cutting-edge Weather Prediction application leveraging real-time data. Integrated user-friendly interface with customizable alerts and weather insights to enhance user experience.",
     img: "/weather-prediction.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "https://predict-weather-six.vercel.app/", // Updated to a complete URL
-  },
-];
-
-export const educationalQualifications = [
-  {
-    id: 1,
-    institution: "University of Example",
-    degree: "Bachelor of Science in Computer Science",
-    year: "2018 - 2022",
-    description:
-      "Specialized in Software Engineering and Artificial Intelligence.",
-  },
-  {
-    id: 2,
-    institution: "Example High School",
-    degree: "High School Diploma",
-    year: "2014 - 2018",
-    description: "Focused on Mathematics and Science subjects.",
-  },
-  // Add more educational qualifications as needed
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Purvika was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Purvika is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Purvika was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Purvika is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Purvika was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Purvika is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    link: "https://predict-weather-six.vercel.app/",
   },
 ];
 
@@ -238,6 +195,7 @@ export const workExperience = [
     desc: "Assisted in the development of a web-based platform using React.js, HTML, CSS, Javascript enhancing interactivity. Planned and organized the development process including setting milestones, timelines and collaborating with the stakeholders.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
   },
   {
     id: 2,
@@ -246,6 +204,7 @@ export const workExperience = [
     desc: "Developed and maintained user-facing features using modern technologies like HTML, CSS, Javascript, ReactJs, Tailwind CSS, PHP, Laravel, REST API, Git. Conducting client meetings for product demo and tech guidance. Got a chance to interact with and design-develop industry-level products for worldwide clients.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
   },
 ];
 
@@ -254,15 +213,18 @@ export const socialMedia = [
     id: 1,
     img: "/git.svg",
     link: "https://github.com/PurvikaJagtap7",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw",
   },
   {
     id: 2,
     img: "/twit.svg",
     link: "https://x.com/Purvika_Jagtap",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw",
   },
   {
     id: 3,
     img: "/link.svg",
     link: "https://www.linkedin.com/in/purvika-jagtap-757b89283/",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw",
   },
 ];

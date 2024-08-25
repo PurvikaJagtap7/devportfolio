@@ -7,9 +7,11 @@ import { useEffect, useState } from "react";
 const Hero = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
+    setIsClient(true);
+    const handleMouseMove = (e) => {
       setMousePosition({ x: e.clientX, y: e.clientY });
     };
 
@@ -28,7 +30,7 @@ const Hero = () => {
   }, []);
 
   const getTransform = () => {
-    if (typeof window === "undefined") return {};
+    if (!isClient) return {};
     return {
       transform: `rotateY(${
         (mousePosition.x - windowSize.width / 2) / 100
@@ -64,9 +66,10 @@ const Hero = () => {
           className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center"
           style={{
             perspective: "1000px",
-            ...getTransform(),
+            ...(isClient ? getTransform() : {}),
           }}
         >
+          {/* Rest of the content remains unchanged */}
           <motion.p
             className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80"
             initial={{ opacity: 0 }}
@@ -95,7 +98,6 @@ const Hero = () => {
             Transforming Complex Concepts into Seamless User Experiences💡
           </motion.h1>
 
-          {/* Rest of the content remains unchanged */}
           <motion.p
             className="text-center md:tracking-wider mb-0 text-sm md:text-lg lg:text-2xl"
             initial={{ opacity: 0, y: 20 }}
