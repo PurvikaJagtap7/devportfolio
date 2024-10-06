@@ -8,7 +8,7 @@ import { PinContainer } from "./ui/Pin";
 import Image from "next/image";
 
 const RecentProjects = () => {
-  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -43,7 +43,7 @@ const RecentProjects = () => {
       >
         Step into <span className="text-fuchsia-500">my code gallery</span>
       </motion.h1>
-      <div className="flex flex-wrap items-center justify-center p-0 gap-10 mt-10">
+       <div className="flex flex-wrap items-center justify-center p-0 gap-10 mt-10">
         {projects.map((item, index) => (
           <motion.div
             className="project-card lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
