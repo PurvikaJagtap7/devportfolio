@@ -12,7 +12,11 @@
   "dependencies": {
     "@react-three/drei": "^9.105.4",
     "@react-three/fiber": "^8.16.2",
+<<<<<<< HEAD
     "@sentry/nextjs": "^8.33.1",
+=======
+    "@sentry/nextjs": "^7.105.0",
+>>>>>>> 5fde85715cc36947efa2e18016ec369050a59fb6
     "@tabler/icons-react": "^3.1.0",
     "@types/three": "^0.163.0",
     "class-variance-authority": "^0.7.0",
@@ -21,7 +25,11 @@
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.365.0",
     "mini-svg-data-uri": "^1.4.4",
+<<<<<<< HEAD
     "next": "^14.2.14",
+=======
+    "next": "14.1.4",
+>>>>>>> 5fde85715cc36947efa2e18016ec369050a59fb6
     "next-themes": "^0.3.0",
     "react": "^18",
     "react-3d-viewer": "^1.0.12",
@@ -32,7 +40,11 @@
     "tailwindcss-animate": "^1.0.7",
     "three": "^0.163.0",
     "three-globe": "^2.31.0",
+<<<<<<< HEAD
     "vercel": "^32.3.0"
+=======
+    "vercel": "^34.0.0"
+>>>>>>> 5fde85715cc36947efa2e18016ec369050a59fb6
   },
   "devDependencies": {
     "@types/node": "^20",
