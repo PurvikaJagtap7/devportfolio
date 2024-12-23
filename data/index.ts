@@ -115,8 +115,17 @@ export const projects = [
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "https://sushi-bites.vercel.app/",
   },
-  {
+   {
     id: 5,
+    title: "Gemini-Chat",
+    des: "Gemini-Pro Based AI chat bot built with Next.js 14 and TypeScript. It uses an AI model to generate responses to user input (either text or image).",
+    img: "/gemini-chat.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "gemini-chat-cyan-eta.vercel.app",
+  },
+  {
+    id: 6,
     title: "Book Town",
     des: "BookTown is a fully functional website for purchasing books",
     img: "/booktown.png",
@@ -125,7 +134,7 @@ export const projects = [
     link: "https://booktown-flax.vercel.app/Home-Page/index.html",
   },
   {
-    id: 6,
+    id: 7,
     title: "Apple-Iphone Website Clone",
     des: "Clone of Apple's iPhone 15 Pro website using React.js and TailwindCSS. It highlights the effective use of GSAP and Three.js for displaying iPhone 15 Pro models in various colors and shapes.",
     img: "/apple-iphone.png",
@@ -134,7 +143,7 @@ export const projects = [
     link: "https://apple-iphone-tan.vercel.app/",
   },
   {
-    id: 7,
+    id: 8,
     title: "Restaurant website",
     des: "Explore Grilli - Restaurant Website",
     img: "/project-grilli-1.JPG",
@@ -143,7 +152,7 @@ export const projects = [
     link: "https://grillirestau-purvika-jagtap-s-projects.vercel.app/",
   },
   {
-    id: 8,
+    id: 9,
     title: "Indian Tourism",
     des: "Explore the epic wonders of India and its unique places.",
     img: "/shubhyatri.png",
@@ -152,7 +161,7 @@ export const projects = [
     link: "https://www.shubhyatri.com/",
   },
   {
-    id: 9,
+    id: 10,
     title: "Shagun Public Charitable Trust",
     des: "Developed a website for NGO to help them fulfill necessary actions efficiently.",
     img: "/ngo.png",
