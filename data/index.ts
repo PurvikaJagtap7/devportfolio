@@ -205,43 +205,42 @@ export const companies = [
 ];
 
 export const workExperience = [
-  {
-    id: 1,
-    title:
-      "Web Developer Intern: VortexWeb, Auckland New Zealand (Remote): Jan 2024 - Feb 2024",
-    company: "AlphaStream Technologies",
-    desc: `Designed and developed the company website from scratch using HTML, CSS, and JavaScript.
-Created responsive layouts ensuring seamless functionality across devices and screen sizes.
-Conducted research on industry trends and best web development practices for optimal results.
-Developed wireframes and mockups, incorporating feedback for enhanced UI/UX.
-Integrated SEO best practices, improving website visibility and search engine ranking.
-Deployed the website on Hostinger, ensuring stable hosting and performance.
-Collaborated with the content team to ensure brand consistency across all pages.
-Managed project timelines and milestones, meeting deadlines efficiently.
-Performed bug testing and resolution, ensuring an error-free user experience.
-Delivered a fully functional, responsive, and visually appealing website within the given timeframe.`,
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
-  },
-  {
-    id: 2,
-    title:
-      `Full-Stack Developer Intern: VortexWeb, Auckland New Zealand (Remote): Feb 2024 - July 2024",
-    desc: "Led end-to-end development of advanced Bitrix24 CRM solutions, enhancing operational workflows by 35%.
-Redesigned and launched the company’s website, achieving a 50% improvement in navigation efficiency and 30% faster load times.
-Integrated Calendly scheduling systems, streamlining client bookings and improving conversion rates by 20%.
-Developed custom CRM pipelines, automated workflows, and optimized lead management processes for seamless tracking.
-Created user documentation and training guides, reducing onboarding time by 50% and enhancing team productivity.
-Resolved complex technical challenges, achieving a 99% bug-free deployment rate across platforms.
-Collaborated with cross-functional teams, aligning technical solutions with business objectives and client requirements.
-Delivered tailored CRM configurations including custom fields, dashboards, and reporting tools for improved data insights.
-Ensured responsive design across all digital platforms, optimizing usability across desktop, tablet, and mobile devices.
-Performed extensive testing and QA, maintaining a 100% uptime record post-launch.`,
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
-  },
+ {
+  id: 1,
+  title: "Web Developer Intern: VortexWeb, Auckland New Zealand (Remote): Jan 2024 - Feb 2024",
+  company: "AlphaStream Technologies",
+  desc: `- Designed and developed the company website from scratch using HTML, CSS, and JavaScript.
+- Created responsive layouts ensuring seamless functionality across devices and screen sizes.
+- Conducted research on industry trends and best web development practices for optimal results.
+- Developed wireframes and mockups, incorporating feedback for enhanced UI/UX.
+- Integrated SEO best practices, improving website visibility and search engine rankings.
+- Deployed the website on Hostinger, ensuring stable hosting and performance.
+- Collaborated with the content team to ensure brand consistency across all pages.
+- Managed project timelines and milestones, meeting deadlines efficiently.
+- Performed bug testing and resolution, ensuring an error-free user experience.
+- Delivered a fully functional, responsive, and visually appealing website within the given timeframe.`,
+  className: "md:col-span-2",
+  thumbnail: "/exp1.svg",
+  sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+},
+{
+  id: 2,
+  title: "Full-Stack Developer Intern: VortexWeb, Auckland New Zealand (Remote): Feb 2024 - July 2024",
+  desc: `- Led end-to-end development of advanced Bitrix24 CRM solutions, enhancing operational workflows by 35%.
+- Redesigned and launched the company’s website, achieving a 50% improvement in navigation efficiency and 30% faster load times.
+- Integrated Calendly scheduling systems, streamlining client bookings and improving conversion rates by 20%.
+- Developed custom CRM pipelines, automated workflows, and optimized lead management processes for seamless tracking.
+- Created user documentation and training guides, reducing onboarding time by 50% and enhancing team productivity.
+- Resolved complex technical challenges, achieving a 99% bug-free deployment rate across platforms.
+- Collaborated with cross-functional teams, aligning technical solutions with business objectives and client requirements.
+- Delivered tailored CRM configurations, including custom fields, dashboards, and reporting tools for improved data insights.
+- Ensured responsive design across all digital platforms, optimizing usability across desktop, tablet, and mobile devices.
+- Performed extensive testing and QA, maintaining a 100% uptime record post-launch.`,
+  className: "md:col-span-2",
+  thumbnail: "/exp4.svg",
+  sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+},
+
 ];
 
 export const socialMedia = [
