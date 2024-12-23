@@ -70,8 +70,17 @@ export const gridItems = [
 ];
 
 export const projects = [
-  {
+   {
     id: 1,
+    title: "ZentryX: An Immersive Web Experience",
+    des: "An award-winning website replica built with React.js, Tailwind CSS, and GSAP, featuring immersive 3D animations, seamless video transitions, and responsive design for an engaging user experience.",
+    img: "/homepage.png",
+    sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://awward-winning-website.vercel.app/",
+  },
+  {
+    id: 2,
     title: "YT 2.0 version",
     des: "Modern YouTube Clone Application in React JS with Material UI 5",
     img: "/Yt.png",
@@ -80,7 +89,7 @@ export const projects = [
     link: "https://you-tube-olive.vercel.app/",
   },
    {
-    id: 2,
+    id: 3,
     title: "sanskritiSpaces - Real Estate App",
     des: "sanskritiSpaces, a Real Esatate NextJS Web application made using Rapid API.",
     img: "/sanskriti.JPG",
@@ -89,7 +98,7 @@ export const projects = [
     link: "https://sanskriti-spaces.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Space themed portfolio website",
     des: "Animated Portfolio Website with Next.js and Framer Motion",
     img: "/spaceportfolio.png",
