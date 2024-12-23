@@ -218,7 +218,11 @@ export const workExperience = [
 - Collaborated with the content team to ensure brand consistency across all pages.
 - Managed project timelines and milestones, meeting deadlines efficiently.
 - Performed bug testing and resolution, ensuring an error-free user experience.
-- Delivered a fully functional, responsive, and visually appealing website within the given timeframe.`,
+- Delivered a fully functional, responsive, and visually appealing website within the given timeframe.
+• Led end-to-end development of advanced Bitrix24 CRM solutions, enhancing operational workflows by 35%.
+• Led end-to-end development of advanced Bitrix24 CRM solutions, enhancing operational workflows by 35%.
+
+`,
   className: "md:col-span-2",
   thumbnail: "/exp1.svg",
   sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
