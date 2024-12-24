@@ -122,7 +122,7 @@ export const projects = [
     img: "/gemini-chat.png",
     sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "gemini-chat-cyan-eta.vercel.app",
+    link: "https://gemini-chat-cyan-eta.vercel.app/",
   },
   {
     id: 6,
