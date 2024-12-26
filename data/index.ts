@@ -82,7 +82,7 @@ export const projects = [
   {
     id: 2,
     title: "FormCraft",
-    des: "Production ready Drag-Drop form builder",
+    des: "Production ready Drag-Drop form builder. Design, customize, and deploy in minutes",
     img: "/formcraft hero.png",
     sizes: "(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
